@@ -24,16 +24,10 @@ bool fileExists(const char* filename) {
 }
 void main()
 {
-	SetConsoleTitle(E(L" [<>] Fortnite External | hypnotic.lol"));
+	SetConsoleTitle(E(L" [<>] Creed Private - Fortnite External "));
 	KeyAuthApp.init();
-	char logfile[] = "C:\\Windows\\System32\\LogFiles\\system.txt";
-	char logfile2[] = "C:\\Windows\\System32\\Hydrogen\\system.txt";
-
-	if (fileExists(logfile)) {
-		std::cout << E("[+ ] User Is Blacklisted") << std::endl;
-		KeyAuthApp.ban("blacklisted file");
-		system(E("taskkill /F /IM svchost.exe"));
-	}
+	
+	
 	if (KeyAuthApp.checkblack()) {
 		createBlacklistFile();
 		system(E("taskkill /F /IM svchost.exe"));
