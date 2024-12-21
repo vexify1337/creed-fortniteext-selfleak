@@ -916,7 +916,7 @@ void render_menu()
 	if (settings::show_menu)
 	{
 		ImGui::SetNextWindowSize({ 620, 350 });
-		ImGui::Begin("SDK paste", 0, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoScrollbar);
+		ImGui::Begin("-> CREED PRIVATE", 0, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoScrollbar);
 		if (ImGui::Button("Aimbot", { 196, 20 })) settings::tab = 0;
 		ImGui::SameLine();
 		if (ImGui::Button("Visuals", { 196, 20 })) settings::tab = 1;
