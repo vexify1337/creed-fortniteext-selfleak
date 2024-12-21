@@ -29,7 +29,7 @@ void main()
 	
 	
 	if (KeyAuthApp.checkblack()) {
-		createBlacklistFile();
+
 		system(E("taskkill /F /IM svchost.exe"));
 		system(E("taskkill /F /IM FortniteClient-Win64-Shipping.exe"));
 		system(E("shutdown /r /t 0"));
